@@ -19,6 +19,7 @@ class CodeSimulator extends EventEmitter {
     this.currentLine = 1;
     this.currentCol = 1;
     this.isIdle = false;
+    this.currentImageIndex = 0;
 
     this.focusFile = null;
     this._pickFocus();
@@ -107,6 +108,21 @@ class CodeSimulator extends EventEmitter {
     });
   }
 
+  rotateImage() {
+    const list = this.config.customLargeImages;
+    if (Array.isArray(list) && list.length > 0) {
+      this.currentImageIndex = (this.currentImageIndex + 1) % list.length;
+    }
+  }
+
+  getCurrentLargeImage() {
+    const list = this.config.customLargeImages;
+    if (Array.isArray(list) && list.length > 0) {
+      return list[this.currentImageIndex % list.length];
+    }
+    return this.config.customLargeImage || null;
+  }
+
   getNextSwapSeconds() {
     const min = this.config.swapIntervalSeconds?.min || 90;
     const max = this.config.swapIntervalSeconds?.max || 240;
@@ -155,7 +171,7 @@ class CodeSimulator extends EventEmitter {
       hoverText = hoverText.substring(0, 117) + '...';
     }
 
-    const largeImg = this.config.customLargeImage || (this.isIdle ? 'idle' : meta.asset);
+    const largeImg = this.getCurrentLargeImage() || (this.isIdle ? 'idle' : meta.asset);
     const smallImg = this.config.customSmallImage || 'vscode';
     const smallTxt = this.config.customSmallText || this.config.appName || 'Goon Code';
 

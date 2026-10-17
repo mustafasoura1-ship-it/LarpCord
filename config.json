@@ -1,6 +1,6 @@
 {
   "clientId": "383226320970055681",
-  "appName": "SCULK SMP DAGESTAN SIMULATOR",
+  "appName": "DAGESTAN SIMULATOR",
   "activeProfile": "blissv2",
   "targetDirectory": "D:\\BLiss SCULK\\bliss\\blissv2",
   "timestampMode": "session",
@@ -8,8 +8,14 @@
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
-  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan.gif",
-  "customLargeText": "SCULK SMP DAGESTAN SIMULATOR",
+  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/bite.gif",
+  "customLargeImages": [
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/bite.gif",
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/cat_busy.gif",
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan.gif"
+  ],
+  "imageRotationIntervalSeconds": 10,
+  "customLargeText": "this otter is busy",
   "customState": "IP: sculksmp.xyz",
   "customSmallImage": "vscode",
   "customSmallText": "sculksmp.xyz",

@@ -73,17 +73,42 @@ async function run() {
 
   let swapTimer = null;
   let jitterTimer = null;
+  let imageTimer = null;
   let swapDeadline = Date.now();
   let jitterDeadline = Date.now();
   let discordTag = null;
+  let lastPush = 0;
+  let pendingPush = null;
 
   function pushActivity(reason) {
     if (!ipc.connected) return;
+    const now = Date.now();
+    const elapsed = now - lastPush;
+    if (elapsed < 2000) {
+      clearTimeout(pendingPush);
+      pendingPush = setTimeout(() => {
+        pushActivity(reason);
+      }, 2000 - elapsed);
+      return;
+    }
+    lastPush = now;
     const act = simulator.buildActivity();
     if (act) {
       ipc.setActivity(act);
       log(`Updated (${reason}): ${act.details} | ${act.state}`);
     }
+  }
+
+  function queueImageRotation() {
+    clearInterval(imageTimer);
+    const images = config.customLargeImages;
+    const intervalSec = config.imageRotationIntervalSeconds || 10;
+    if (!images || !Array.isArray(images) || images.length <= 1) return;
+
+    imageTimer = setInterval(() => {
+      simulator.rotateImage();
+      pushActivity('image_rotation');
+    }, intervalSec * 1000);
   }
 
   function queueSwap() {
@@ -115,12 +140,14 @@ async function run() {
     pushActivity('ready');
     queueSwap();
     queueJitter();
+    queueImageRotation();
   });
 
   ipc.on('disconnected', () => {
     log('Discord pipe closed. Reconnecting...');
     clearTimeout(swapTimer);
     clearTimeout(jitterTimer);
+    clearInterval(imageTimer);
   });
 
   // Watch for CLI control events & dump status
@@ -159,6 +186,7 @@ async function run() {
           }
           profile = resolveProfile(config, currentKey);
           simulator.setProfile(profile);
+          queueImageRotation();
           log('Config reloaded');
           pushActivity('config_reloaded');
         } else if (cmd.command === 'stop') {
@@ -194,6 +222,7 @@ async function run() {
     clearInterval(watcher);
     clearTimeout(swapTimer);
     clearTimeout(jitterTimer);
+    clearInterval(imageTimer);
 
     try {
       if (fs.existsSync(STATUS_FILE)) fs.writeFileSync(STATUS_FILE, JSON.stringify({ running: false }, null, 2));
