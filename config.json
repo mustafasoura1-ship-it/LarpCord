@@ -3,7 +3,7 @@
   "appName": "Goon Code",
   "activeProfile": "blissv2",
   "targetDirectory": "D:\\BLiss SCULK\\bliss\\blissv2",
-  "timestampMode": "file",
+  "timestampMode": "session",
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
