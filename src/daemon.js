@@ -149,9 +149,14 @@ async function run() {
           pushActivity('file_forced');
           queueSwap();
           queueJitter();
-        } else if (cmd.command === 'reload') {
+        } else if (cmd.command === 'reload' || cmd.command === 'reload_config') {
           config = readConfig();
           simulator.config = config;
+          if (config.fixedStartTimestamp) {
+            simulator.sessionStart = Math.floor(config.fixedStartTimestamp / 1000);
+          } else if (config.offsetHours && !simulator.sessionStart) {
+            simulator.sessionStart = Math.floor(Date.now() / 1000) - Math.floor(config.offsetHours * 3600);
+          }
           profile = resolveProfile(config, currentKey);
           simulator.setProfile(profile);
           log('Config reloaded');

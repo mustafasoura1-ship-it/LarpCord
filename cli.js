@@ -97,6 +97,17 @@ switch (action) {
     break;
   }
 
+  case 'reload': {
+    const pid = getPid();
+    if (!pid) {
+      console.log('Daemon is not running.');
+      process.exit(1);
+    }
+    fs.writeFileSync(CONTROL_FILE, JSON.stringify({ command: 'reload' }), 'utf8');
+    console.log('[✓] Sent reload signal to running daemon.');
+    break;
+  }
+
   case 'status': {
     printStatus();
     break;

@@ -7,8 +7,12 @@ class CodeSimulator extends EventEmitter {
     this.profile = profile;
     this.config = config;
 
-    const offsetSec = (config.offsetHours || 0) * 3600;
-    this.sessionStart = Math.floor(Date.now() / 1000) - offsetSec;
+    if (config.fixedStartTimestamp) {
+      this.sessionStart = Math.floor(config.fixedStartTimestamp / 1000);
+    } else {
+      const offsetSec = (config.offsetHours || 0) * 3600;
+      this.sessionStart = Math.floor(Date.now() / 1000) - offsetSec;
+    }
     this.fileStart = this.sessionStart;
 
     this.currentFile = null;
