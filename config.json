@@ -4,6 +4,7 @@
   "activeProfile": "blissv2",
   "targetDirectory": "D:\\BLiss SCULK\\bliss\\blissv2",
   "timestampMode": "session",
+  "offsetHours": 19,
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
