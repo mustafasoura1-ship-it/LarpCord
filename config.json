@@ -1,0 +1,30 @@
+{
+  "clientId": "383226320970055681",
+  "appName": "Goon Code",
+  "activeProfile": "blissv2",
+  "targetDirectory": "D:\\BLiss SCULK\\bliss\\blissv2",
+  "timestampMode": "file",
+  "showCursorPosition": true,
+  "showLineCount": true,
+  "showGitBranch": true,
+  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/cat_busy.gif",
+  "customLargeText": "this otter is busy",
+  "customState": "this otter is busy",
+  "customSmallImage": null,
+  "customSmallText": null,
+  "swapIntervalSeconds": {
+    "min": 90,
+    "max": 240
+  },
+  "cursorJitterIntervalSeconds": {
+    "min": 20,
+    "max": 45
+  },
+  "idleSimulation": {
+    "enabled": false,
+    "intervalMinutes": 45,
+    "durationMinutes": 3
+  },
+  "enableButtons": false,
+  "buttons": []
+}

@@ -1,0 +1,7 @@
+node_modules/
+daemon.pid
+status.json
+control.json
+*.log
+.DS_Store
+Thumbs.db

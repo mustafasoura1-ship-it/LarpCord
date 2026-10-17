@@ -1,0 +1,24 @@
+{
+  "name": "larpcord",
+  "version": "1.0.0",
+  "description": "Fake VS Code coding activity on Discord with realistic file swaps, line jitters, and custom GIF support.",
+  "main": "src/daemon.js",
+  "bin": {
+    "larpcord": "cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js start",
+    "stop": "node cli.js stop",
+    "status": "node cli.js status",
+    "restart": "node cli.js restart",
+    "dev": "node cli.js run"
+  },
+  "keywords": [
+    "discord-rpc",
+    "rich-presence",
+    "fake-coding",
+    "vscode"
+  ],
+  "author": "mustafasoura1",
+  "license": "MIT"
+}
