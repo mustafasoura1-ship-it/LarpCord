@@ -8,12 +8,9 @@
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
-  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider1.gif",
+  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider_full.gif",
   "customLargeImages": [
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider1.gif",
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider2.gif",
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider3.gif",
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider4.gif"
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider_full.gif"
   ],
   "imageRotationIntervalSeconds": 10,
   "customLargeText": "https://youtu.be/w7Fwp4q_07U",
