@@ -8,14 +8,15 @@
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
-  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze1.gif",
+  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider1.gif",
   "customLargeImages": [
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze1.gif",
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze2.gif",
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze3.gif"
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider1.gif",
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider2.gif",
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider3.gif",
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider4.gif"
   ],
   "imageRotationIntervalSeconds": 10,
-  "customLargeText": "https://youtu.be/zSA7R87gGLQ",
+  "customLargeText": "https://youtu.be/w7Fwp4q_07U",
   "customState": "Its that time in october",
   "customSmallImage": "vscode",
   "customSmallText": "sculksmp.xyz",
@@ -35,8 +36,8 @@
   "enableButtons": true,
   "buttons": [
     {
-      "label": "Watch on YouTube",
-      "url": "https://youtu.be/zSA7R87gGLQ"
+      "label": "Tame Impale - LOSER (spiderman)",
+      "url": "https://youtu.be/w7Fwp4q_07U"
     }
   ]
 }
