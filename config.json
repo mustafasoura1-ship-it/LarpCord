@@ -15,7 +15,7 @@
     "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze3.gif"
   ],
   "imageRotationIntervalSeconds": 10,
-  "customLargeText": "Its that time in october",
+  "customLargeText": "https://youtu.be/zSA7R87gGLQ",
   "customState": "Its that time in october",
   "customSmallImage": "vscode",
   "customSmallText": "sculksmp.xyz",
@@ -36,7 +36,7 @@
   "buttons": [
     {
       "label": "Watch on YouTube",
-      "url": "https://youtu.be/zSA7R87gGLQ?si=gzwXVDgiQ6acslqH"
+      "url": "https://youtu.be/zSA7R87gGLQ"
     }
   ]
 }
