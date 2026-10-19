@@ -8,15 +8,15 @@
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
-  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/bite.gif",
+  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze1.gif",
   "customLargeImages": [
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/bite.gif",
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/cat_busy.gif",
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan.gif"
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze1.gif",
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze2.gif",
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/reze3.gif"
   ],
   "imageRotationIntervalSeconds": 10,
-  "customLargeText": "this otter is busy",
-  "customState": "IP: sculksmp.xyz",
+  "customLargeText": "Its that time in october",
+  "customState": "Its that time in october",
   "customSmallImage": "vscode",
   "customSmallText": "sculksmp.xyz",
   "swapIntervalSeconds": {
