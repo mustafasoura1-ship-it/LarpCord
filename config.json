@@ -32,6 +32,11 @@
     "intervalMinutes": 45,
     "durationMinutes": 3
   },
-  "enableButtons": false,
-  "buttons": []
+  "enableButtons": true,
+  "buttons": [
+    {
+      "label": "Watch on YouTube",
+      "url": "https://youtu.be/zSA7R87gGLQ?si=gzwXVDgiQ6acslqH"
+    }
+  ]
 }
