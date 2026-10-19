@@ -208,6 +208,11 @@ function printStatus() {
     console.log(`  │ \x1b[1m${appTitle}\x1b[0m │`);
     console.log(`  │ Details: ${(s.activity?.details || '').padEnd(36)} │`);
     console.log(`  │ State:   ${(s.activity?.state || '').padEnd(36)} │`);
+    if (s.activity?.buttons?.length) {
+      s.activity.buttons.forEach(b => {
+        console.log(`  │ Button:  [\x1b[36m${b.label}\x1b[0m] (${b.url})`);
+      });
+    }
     console.log(`  └───────────────────────────────────────────────┘`);
   } catch (e) {
     console.log('[!] Error reading status:', e.message);
