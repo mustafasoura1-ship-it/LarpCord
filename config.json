@@ -1,6 +1,6 @@
 {
   "clientId": "383226320970055681",
-  "appName": "MOMMY SIMULATOR",
+  "appName": "Mommy asmr",
   "activeProfile": "blissv2",
   "targetDirectory": "D:\\BLiss SCULK\\bliss\\blissv2",
   "timestampMode": "session",
@@ -13,7 +13,7 @@
     "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/mommy.gif"
   ],
   "imageRotationIntervalSeconds": 10,
-  "customLargeText": "MOMMY SIMULATOR",
+  "customLargeText": "Mommy asmr",
   "customState": "Its that time in october",
   "customSmallImage": "vscode",
   "customSmallText": "sculksmp.xyz",
