@@ -1,6 +1,6 @@
 {
   "clientId": "383226320970055681",
-  "appName": "DAGESTAN SIMULATOR",
+  "appName": "MOMMY SIMULATOR",
   "activeProfile": "blissv2",
   "targetDirectory": "D:\\BLiss SCULK\\bliss\\blissv2",
   "timestampMode": "session",
@@ -8,12 +8,12 @@
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
-  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider_full.gif",
+  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/mommy.gif",
   "customLargeImages": [
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider_full.gif"
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/mommy.gif"
   ],
   "imageRotationIntervalSeconds": 10,
-  "customLargeText": "Tame Impale - LOSER (spiderman)",
+  "customLargeText": "MOMMY SIMULATOR",
   "customState": "Its that time in october",
   "customSmallImage": "vscode",
   "customSmallText": "sculksmp.xyz",
