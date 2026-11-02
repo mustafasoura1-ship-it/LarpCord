@@ -8,12 +8,13 @@
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
-  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider_full.gif",
+  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan_forget.gif",
   "customLargeImages": [
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan_forget.gif",
     "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider_full.gif"
   ],
   "imageRotationIntervalSeconds": 10,
-  "customLargeText": "Tame Impale - LOSER (spiderman)",
+  "customLargeText": "Tame Impala - LOSER (spiderman)",
   "customState": "Its that time in october",
   "customSmallImage": "vscode",
   "customSmallText": "sculksmp.xyz",
@@ -33,7 +34,7 @@
   "enableButtons": true,
   "buttons": [
     {
-      "label": "Tame Impale - LOSER (spiderman)",
+      "label": "Tame Impala - LOSER (spiderman)",
       "url": "https://youtu.be/w7Fwp4q_07U"
     }
   ]
