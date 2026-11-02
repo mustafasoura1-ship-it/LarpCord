@@ -8,10 +8,9 @@
   "showCursorPosition": true,
   "showLineCount": true,
   "showGitBranch": true,
-  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan_forget.gif",
+  "customLargeImage": "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan.gif",
   "customLargeImages": [
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan_forget.gif",
-    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/spider_full.gif"
+    "https://raw.githubusercontent.com/mustafasoura1-ship-it/bliss-assets/main/dagestan.gif"
   ],
   "imageRotationIntervalSeconds": 10,
   "customLargeText": "Tame Impala - LOSER (spiderman)",
